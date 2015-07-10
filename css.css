@@ -216,8 +216,8 @@ background-image:url("img/chrisna.jpg");
 }
 
 @keyframes move1{
-0%{left:74%;top:68%;}
-20%{left:74%;top:68%; }
+0%{left:65%;top:75%;}
+20%{left:65%;top:5%; }
 40%{left:74%; top:68%;}
 60%{left:74%;top:68%;}
 80%{left:74%; top:68%:}
