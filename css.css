@@ -17,9 +17,9 @@ h2{position:fixed; right:20px; bottom:0; font-size:18px; color:red;}
 /*play area*/
 .wrapper{  
 
-height:900px;
+height:100%;
 
-  background-image:url("background.jpg");
+  background-image:url("img/background.jpg");
   background-position:100%;
   
   position:relative;
@@ -101,13 +101,13 @@ height:900px;
   content:"You'll be hearing from my lawyers"; color:red; font-weight:bold; }
 
 .pajaro1{top:250px;
-	background-image:url("chris.jpg");
+	background-image:url("img/chris.jpg");
 	background-size:100%;
   animation-delay: -2s!important;
   transform:scale(1.4);
 }
 .pajaro2{
-	background-image:url("peter.jpg");
+	background-image:url("img/peter.jpg");
 	background-size:100%;
   top:150px;
   animation-delay: -6s!important;
@@ -115,7 +115,7 @@ height:900px;
 }
 .pajaro3{
 
-	background-image:url("julio.jpg");
+	background-image:url("img/julio.jpg");
 	background-size:100%;
 
   top:300px;
@@ -125,21 +125,21 @@ height:900px;
 
 .pajaro4{
 
-	background-image:url("steve.png");
+	background-image:url("img/steve.png");
 	background-size:100%;
 	top:50px;
   animation-delay: -12s!important;
   transform:scale(1.4);
 }
 .pajaro5{
-	background-image:url("ziggy.jpg");
+	background-image:url("img/ziggy.jpg");
 	background-size:100%;
   top:100px;
   animation-delay: -16s!important;
   transform:scale(1.4); 
 }
 .pajaro6{
-background-image:url("chrisna.jpg");
+background-image:url("img/chrisna.jpg");
 	background-size:100%;
   top:200px;
   animation-delay: -20s!important;
@@ -228,7 +228,7 @@ background-image:url("chrisna.jpg");
 
 
 .derek{
-background-image:url("derek.jpg");
+background-image:url("img/derek.jpg");
 	background-size:100%;
 	height:100px;
 	width:140px;
