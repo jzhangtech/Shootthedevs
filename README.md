@@ -1,6 +1,6 @@
 # Shootthedevs
 
-origin game by 
+inspiration original game by 
 
 http://codepen.io/elad2412/pen/hBaqo
 
