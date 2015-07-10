@@ -11,17 +11,27 @@ user-select: none;
 /*hide checkbox
 input{position:fixed; left:-10px; top:-10px;}*/
 
+html { 
+ 
+  background-image:url("img/background.jpg")
+; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 h1{margin:0; text-align:center;}
-h2{position:fixed; right:20px; bottom:0; font-size:18px; color:red;}
-
 /*play area*/
 .wrapper{  
 
+
 height:100%;
 
-  background-image:url("img/background.jpg");
-  background-position:100%;
-  
+width:100%;
+background position:100%;
+
+ 
+
   position:relative;
   cursor:crosshair;
 }
@@ -212,16 +222,16 @@ background-image:url("img/chrisna.jpg");
 .input-circle ~ .derek{
   opacity:1;
   transition:1.5s  cubic-bezier(0,.43,1,0);
-  animation: move1 10s infinite alternate;
+  animation: move1 21s infinite alternate;
 }
 
 @keyframes move1{
-0%{left:65%;top:75%;}
-20%{left:65%;top:5%; }
-40%{left:74%; top:68%;}
-60%{left:74%;top:68%;}
-80%{left:74%; top:68%:}
-100%{left:74%; top:68%; }
+0%{left:75%;top:78%;}
+20%{left:75%;top:78%; }
+40%{left:75%; top:78%;}
+60%{left:75%;top:78%;}
+80%{left:75%; top:78%:}
+100%{left:75%; top:78%; }
 }
 
 
@@ -230,8 +240,8 @@ background-image:url("img/chrisna.jpg");
 .derek{
 background-image:url("img/derek.jpg");
 	background-size:100%;
-	height:100px;
-	width:140px;
+	height:70px;
+	width:100px;
 	float:right;
 	position:absolute;
 
