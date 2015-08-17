@@ -1,9 +1,7 @@
-# Shootthedevs
+# Shoot some A100 Devs
 
-inspiration and original game by 
-
+Game by 
 http://codepen.io/elad2412/pen/hBaqo
 
-animation transition -
+Featuring A100/IndieSoft members =)
 
-http://cubic-bezier.com/
