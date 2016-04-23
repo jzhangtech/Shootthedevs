@@ -1,339 +1,387 @@
-body{
-  counter-reset:birds;
-  -webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-  overflow:hidden;
+body {
+    counter-reset: birds;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
 }
 /*hide checkbox
 input{position:fixed; left:-10px; top:-10px;}*/
 
-html { 
- 
-  background-image:url("img/background.jpg")
-; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+html {
+    background-image: url("img/background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-h1{margin:0; text-align:center;}
+h1 {
+    margin: 0;
+    text-align: center;
+}
 /*play area*/
-.wrapper{  
 
-
-height:100%;
-
-width:100%;
-background position:100%;
-
- 
-
-  position:relative;
-  cursor:crosshair;
+.wrapper {
+    height: 100%;
+    width: 100%;
+    background position: 100%;
+    position: relative;
+    cursor: crosshair;
 }
 /*count dead birds*/
-.input-circle:checked{
-  counter-increment:birds;
+
+.input-circle:checked {
+    counter-increment: birds;
 }
-
-.sum{position:fixed; left:45%; top:60px; font-size:24px; fonot-weight:bold;}
-
+.sum {
+    position: fixed;
+    left: 45%;
+    top: 60px;
+    font-size: 24px;
+    fonot-weight: bold;
+}
 /*print to screen dead birds*/
-.sum:after{
-  content: counter(birds);
+
+.sum:after {
+    content: counter(birds);
 }
-
-
-
 .input-circle1:not(:checked) ~ .pajaro1,
 .input-circle2:not(:checked) ~ .pajaro2,
 .input-circle3:not(:checked) ~ .pajaro3,
 .input-circle4:not(:checked) ~ .pajaro4,
 .input-circle5:not(:checked) ~ .pajaro5,
 .input-circle6:not(:checked) ~ .pajaro6,
-.input-circle7:not(:checked) ~ .dev7
-{
-  opacity:1; 
+.input-circle7:not(:checked) ~ .dev7 {
+    opacity: 1;
 }
-
-
 .input-circle1:checked ~ .pajaro1 span,
 .input-circle2:checked ~ .pajaro2 span,
 .input-circle3:checked ~ .pajaro3 span,
 .input-circle4:checked ~ .pajaro4 span,
 .input-circle5:checked ~ .pajaro5 span,
 .input-circle6:checked ~ .pajaro6 span,
-.input-circle7:checked ~ .dev7 span
-{
-  display:block;
-  
+.input-circle7:checked ~ .dev7 span {
+    display: block;
 }
-
-.input-circle ~ .pajaro{
-  opacity:0;
-  transition:1.5s  cubic-bezier(0,.43,1,0);
-  animation: move 8s infinite alternate;
+.input-circle ~ .pajaro {
+    opacity: 0;
+    transition: 1.5s cubic-bezier(0, .43, 1, 0);
+    animation: move 8s infinite alternate;
 }
-
-
-
-.pajaro{   
-  position:absolute;
-  left:0;  
-  cursor:crosshair;
+.pajaro {
+    position: absolute;
+    left: 0;
+    cursor: crosshair;
 }
-.pajaro>span{
-  display:none;position:absolute; z-index:2; left:-250%;bottom:-50%;  
-  background-color:white; border:solid 2px #000; width:100px; height:80px; padding:10px; border-radius:50%;
+.pajaro>span {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: -250%;
+    bottom: -50%;
+    background-color: white;
+    border: solid 2px #000;
+    width: 100px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 50%;
 }
-.pajaro1>span:before{
-  content:"I'M THE SITE MANAGER!!"; color:red; font-weight:bold; 
+.pajaro1>span:before {
+    content: "I'M THE SITE MANAGER!!";
+    color: red;
+    font-weight: bold;
 }
-.pajaro2>span:before{
-  content:"F**k OFF"; color:red; font-weight:bold; 
+.pajaro2>span:before {
+    content: "F**k OFF";
+    color: red;
+    font-weight: bold;
 }
-
-.pajaro3>span:before{
-  content:"My love .. JAVASCRIPT"; color:red; font-weight:bold; }
-  
-  .pajaro4>span:before{
-  content:"F$$K RYAN"; color:red; font-weight:bold; }
-  
-   .pajaro5>span:before{
-  content:"Ziggy no more"; color:red; font-weight:bold; }
-  
-    
-  .pajaro6>span:before{
-  content:"You'll be hearing from my lawyers"; color:red; font-weight:bold; }
-
-.pajaro1{top:250px;
-	background-image:url("img/chris.jpg");
-	background-size:100%;
-  animation-delay: -2s!important;
-  transform:scale(1.4);
+.pajaro3>span:before {
+    content: "But is it responsive?";
+    color: red;
+    font-weight: bold;
 }
-.pajaro2{
-	background-image:url("img/peter.jpg");
-	background-size:100%;
-  top:150px;
-  animation-delay: -6s!important;
-  transform:scale(1.4); 
+.pajaro4>span:before {
+    content: "F$$K RYAN";
+    color: red;
+    font-weight: bold;
 }
-.pajaro3{
-
-	background-image:url("img/julio.jpg");
-	background-size:100%;
-
-  top:300px;
-  animation-delay: -10s!important;
-  transform:scale(1.4); 
+.pajaro5>span:before {
+    content: "Ziggy no more";
+    color: red;
+    font-weight: bold;
 }
-
-.pajaro4{
-
-	background-image:url("img/steve.png");
-	background-size:100%;
-	top:50px;
-  animation-delay: -12s!important;
-  transform:scale(1.4);
+.pajaro6>span:before {
+    content: "You'll be hearing from my lawyers";
+    color: red;
+    font-weight: bold;
 }
-.pajaro5{
-	background-image:url("img/ziggy.jpg");
-	background-size:100%;
-  top:100px;
-  animation-delay: -16s!important;
-  transform:scale(1.4); 
+.pajaro1 {
+    top: 250px;
+    background-image: url("img/chris.jpg");
+    background-size: 100%;
+    animation-delay: -2s!important;
+    transform: scale(1.4);
 }
-.pajaro6{
-background-image:url("img/chrisna.jpg");
-	background-size:100%;
-  top:200px;
-  animation-delay: -20s!important;
-  transform:scale(1.4); 
+.pajaro2 {
+    background-image: url("img/peter.jpg");
+    background-size: 100%;
+    top: 150px;
+    animation-delay: -6s!important;
+    transform: scale(1.4);
 }
-
-@keyframes move{
-0%{left:0%;}
-20%{left:20%;top:50%; }
-40%{top:30%; left:60%;}
-60%{top:80%;left:80%;}
-80%{top:10%; left:20%:}
-100%{top:30%; left:20%; }
+.pajaro3 {
+    background-image: url("img/julio.jpg");
+    background-size: 100%;
+    top: 300px;
+    animation-delay: -10s!important;
+    transform: scale(1.4);
 }
-
+.pajaro4 {
+    background-image: url("img/steve.png");
+    background-size: 100%;
+    top: 50px;
+    animation-delay: -12s!important;
+    transform: scale(1.4);
+}
+.pajaro5 {
+    background-image: url("img/ziggy.jpg");
+    background-size: 100%;
+    top: 100px;
+    animation-delay: -16s!important;
+    transform: scale(1.4);
+}
+.pajaro6 {
+    background-image: url("img/chrisna.jpg");
+    background-size: 100%;
+    top: 200px;
+    animation-delay: -20s!important;
+    transform: scale(1.4);
+}
+@keyframes move {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 20%;
+        top: 50%;
+    }
+    40% {
+        top: 30%;
+        left: 60%;
+    }
+    60% {
+        top: 80%;
+        left: 80%;
+    }
+    80% {
+        top: 10%;
+        left: 20%:
+    }
+    100% {
+        top: 30%;
+        left: 20%;
+    }
+}
 /**** game over starts here ******/
 
-.timer{
-  background-color:#333; width:300px;height:50px;
-  position:fixed;
+.timer {
+    background-color: #333;
+    width: 300px;
+    height: 50px;
+    position: fixed;
 }
-
-
-.timer span{
-  display:block;
-  background:repeating-linear-gradient(-45deg, #000, rgba(0, 0, 0, 0) 25px, #FFF 25px, #FFF 50px);
-  width:300px; height:50px;
- 
-  animation:timer 20s linear;
+.timer span {
+    display: block;
+    background: repeating-linear-gradient(-45deg, #000, rgba(0, 0, 0, 0) 25px, #FFF 25px, #FFF 50px);
+    width: 300px;
+    height: 50px;
+    animation: timer 20s linear;
 }
-
-.timer span:before{  
-  content:"TIME LEFT";
-  display:block;
-  position:absolute; z-index:3;
-  left:0; 
-  right:0;
-  top:0;
-  bottom:0;
-  text-align:center;
-  line-height:50px;
-  font-size:25px;
-  color:red;
+.timer span:before {
+    content: "TIME LEFT";
+    display: block;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    color: red;
 }
-@keyframes timer{
-0%{width:10px;}
-100%{width:300px; display:block;}
+@keyframes timer {
+    0% {
+        width: 10px;
+    }
+    100% {
+        width: 300px;
+        display: block;
+    }
 }
-
-
-.gameover{
-  position:fixed; z-index:100000; left:0; top:0; bottom:0; right:0; background-color:rgba(0,0,0,0.8);
-  animation:gameover 20s linear forwards;
-  font-size:80px; color:white; font-weight:bold; text-align:center; 
-  text-indent:0;  
-  line-height:500px;
+.gameover {
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: gameover 20s linear forwards;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-indent: 0;
+    line-height: 500px;
 }
-
-@keyframes gameover{
-0%{left:-5000px;bottom:100%;}
-97%{left:-5000px;bottom:100%;}
-100%{ left:0px;}
+@keyframes gameover {
+    0% {
+        left: -5000px;
+        bottom: 100%;
+    }
+    97% {
+        left: -5000px;
+        bottom: 100%;
+    }
+    100% {
+        left: 0px;
+    }
 }
-
 /**** game over starts here ******/
-
 /*------------------------------------------------------ body of the bird
 */
 
-.input-circle ~ .derek{
-  opacity:1;
-  transition:1.5s  cubic-bezier(0,.43,1,0);
-  animation: move1 21s infinite alternate;
+.input-circle ~ .derek {
+    opacity: 1;
+    transition: 1.5s cubic-bezier(0, .43, 1, 0);
+    animation: move1 21s infinite alternate;
 }
-
-@keyframes move1{
-0%{left:75%;top:78%;}
-20%{left:75%;top:78%; }
-40%{left:75%; top:78%;}
-60%{left:75%;top:78%;}
-80%{left:75%; top:78%:}
-100%{left:75%; top:78%; }
+@keyframes move1 {
+    0% {
+        left: 75%;
+        top: 78%;
+    }
+    20% {
+        left: 75%;
+        top: 78%;
+    }
+    40% {
+        left: 75%;
+        top: 78%;
+    }
+    60% {
+        left: 75%;
+        top: 78%;
+    }
+    80% {
+        left: 75%;
+        top: 78%:
+    }
+    100% {
+        left: 75%;
+        top: 78%;
+    }
 }
-
-
-
-
-.derek{
-background-image:url("img/derek.jpg");
-	background-size:100%;
-	height:70px;
-	width:100px;
-	float:right;
-	position:absolute;
-
-	cursor:crosshair;
-	 left:0;
-	 border-radius:60%;
-	}
-	
-.derek>span{
-  display:none;position:absolute; z-index:2; left:-170%;  
-  background-color:white; border:solid 2px #000; width:150px; height:80px; padding-top:30px; padding-left:30px; border-radius:50%;
+.derek {
+    background-image: url("img/derek.jpg");
+    background-size: 100%;
+    height: 70px;
+    width: 100px;
+    float: right;
+    position: absolute;
+    cursor: crosshair;
+    left: 0;
+    border-radius: 60%;
 }
-.derek>span:before{
-  content:"I'M THE CEO !"; color:red; font-weight:bold;
-
-
+.derek>span {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: -170%;
+    background-color: white;
+    border: solid 2px #000;
+    width: 150px;
+    height: 80px;
+    padding-top: 30px;
+    padding-left: 30px;
+    border-radius: 50%;
 }
-	
-
-	
-	
-	
-	
-	
-	
-
-
-.pajaro{
-
-  border-radius: 50% 50% 20% 20%;
-  color:white;
-  line-height:20px;
-  letter-spacing: 2px;
-  font-size:0.8em;
-  text-align:center;
-  position:absolute;
- 
-  margin-top:-20px; margin-left:-10px;
-  width:50px; height:50px;
-  animation:planeo 0.8s linear infinite;
-  z-index:999;
+.derek>span:before {
+    content: "I'M THE CEO !";
+    color: red;
+    font-weight: bold;
 }
-
+.pajaro {
+    border-radius: 50% 50% 20% 20%;
+    color: white;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    text-align: center;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -10px;
+    width: 50px;
+    height: 50px;
+    animation: planeo 0.8s linear infinite;
+    z-index: 999;
+}
 .pajaro:after,
-.pajaro:before{
-  content:"";
-  position:absolute;
-  top:50%; left:50%;
+.pajaro:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
-
 /*------------------------------------------------------ bird wings
 */
 
-.pajaro:after{
-  border-radius: 100% 100% 0 0;
-  box-shadow: inset 0px 5px 0 white;
-  width:100px; height:100px;
-  margin-top:-7px; margin-left:-50px;
-  transform-origin: 100% 0%;
-  animation:alas 3s linear infinite;
+.pajaro:after {
+    border-radius: 100% 100% 0 0;
+    box-shadow: inset 0px 5px 0 white;
+    width: 100px;
+    height: 100px;
+    margin-top: -7px;
+    margin-left: -50px;
+    transform-origin: 100% 0%;
+    animation: alas 3s linear infinite;
 }
-
 /*------------------------------------------------------ bird beak
 */
 
-.pajaro:before{
-  background:#FFC37F;
-  border-radius: 100% 0% 20% 0%;
-  margin-top:3px; margin-left:-4px;
-  width:6px; height:6px;
-  transform:rotateZ(45deg);
+.pajaro:before {
+    background: #FFC37F;
+    border-radius: 100% 0% 20% 0%;
+    margin-top: 3px;
+    margin-left: -4px;
+    width: 6px;
+    height: 6px;
+    transform: rotateZ(45deg);
 }
-
 /*------------------------------------------------------ wings animation
 */
 
 @keyframes alas {
-  50%{
-    transform:rotateX(-1440deg);
-  }
+    50% {
+        transform: rotateX(-1440deg);
+    }
 }
-
 /*------------------------------------------------------ bird animation
 */
 
 @keyframes planeo {
-  40%{
-    transform:rotateZ(2deg) translateX(2px) translateY(10px) translateZ(0);
-    line-height:16px;
-    font-size:0.6em;
-  }
-  80%{
-    transform:rotateZ(-2deg) translateX(5px) translateY(8px) translateZ(0);
-  }
+    40% {
+        transform: rotateZ(2deg) translateX(2px) translateY(10px) translateZ(0);
+        line-height: 16px;
+        font-size: 0.6em;
+    }
+    80% {
+        transform: rotateZ(-2deg) translateX(5px) translateY(8px) translateZ(0);
+    }
 }
